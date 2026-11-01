@@ -1,0 +1,16 @@
+# SestenHarfe - Minimal Bağımlılıklar (Sadece Wav2Vec2 + CTC)
+numpy>=1.24.0,<2.0.0
+scipy>=1.10.0
+sounddevice>=0.4.6
+
+# Arayüz
+PyQt6>=6.5.0
+
+# Akustik Model ve Derin Öğrenme
+torch>=2.0.0
+torchaudio>=2.0.0
+transformers>=4.40.0
+
+# VAD (Ses Aktivite Algılama)
+webrtcvad-wheels; sys_platform == 'win32'
+webrtcvad; sys_platform != 'win32'
